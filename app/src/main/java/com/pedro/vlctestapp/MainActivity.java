@@ -8,8 +8,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.pedro.vlc.VlcListener;
-import com.pedro.vlc.VlcVideoLibrary;
+import com.limit.vlc.VlcListener;
+import com.limit.vlc.VlcVideoLibrary;
 import java.util.Arrays;
 import org.videolan.libvlc.MediaPlayer;
 
