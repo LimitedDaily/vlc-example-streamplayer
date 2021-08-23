@@ -11,7 +11,6 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -22,6 +21,6 @@ android {
 }
 
 dependencies {
-    //implementation project(':libvlc')
-    implementation 'org.videolan.android:libvlc-all:3.2.6'
+    implementation project(':libvlc')
+    //implementation 'org.videolan.android:libvlc-all:3.2.6'
 }
