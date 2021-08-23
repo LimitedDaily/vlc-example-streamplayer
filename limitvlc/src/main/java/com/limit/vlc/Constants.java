@@ -1,7 +1,7 @@
-package com.pedro.vlc;
+package com.limit.vlc;
 
 /**
- * Created by pedro on 29/06/17.
+ * Created by limit on 29/06/17.
  */
 
 public class Constants {

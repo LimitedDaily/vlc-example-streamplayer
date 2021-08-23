@@ -1,4 +1,4 @@
-package com.pedro.vlc;
+package com.limit.vlc;
 
 import android.content.Context;
 import android.graphics.SurfaceTexture;
@@ -15,7 +15,7 @@ import org.videolan.libvlc.Media;
 import org.videolan.libvlc.MediaPlayer;
 
 /**
- * Created by pedro on 25/06/17.
+ * Created by limit on 25/06/17.
  * Play and stop need be in other thread or app can freeze
  */
 public class VlcVideoLibrary implements MediaPlayer.EventListener {
@@ -37,6 +37,13 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     this.surfaceView = surfaceView;
     vlcInstance = new LibVLC(context, new VlcOptions().getDefaultOptions());
     options.add(":fullscreen");
+  }
+
+  public VlcVideoLibrary(Context context, VlcListener vlcListener, SurfaceView surfaceView, List<String> options) {
+    this.vlcListener = vlcListener;
+    this.surfaceView = surfaceView;
+    vlcInstance = new LibVLC(context, new VlcOptions().getDefaultOptions());
+    this.options = options;
   }
 
   public VlcVideoLibrary(Context context, VlcListener vlcListener, TextureView textureView) {

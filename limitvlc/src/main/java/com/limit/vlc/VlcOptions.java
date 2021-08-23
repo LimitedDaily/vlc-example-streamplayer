@@ -1,9 +1,9 @@
-package com.pedro.vlc;
+package com.limit.vlc;
 
 import java.util.ArrayList;
 
 /**
- * Created by pedro on 25/06/17.
+ * Created by limit on 25/06/17.
  */
 public class VlcOptions {
 

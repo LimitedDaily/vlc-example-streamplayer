@@ -14,7 +14,7 @@ import java.util.Arrays;
 import org.videolan.libvlc.MediaPlayer;
 
 /**
- * Created by pedro on 25/06/17.
+ * Created by limit on 25/06/17.
  */
 public class MainActivity extends AppCompatActivity implements VlcListener, View.OnClickListener {
 

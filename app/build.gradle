@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     buildToolsVersion "27.0.3"
     defaultConfig {
-        applicationId "com.pedro.vlctestapp"
+        applicationId "com.limit.vlctestapp"
         minSdkVersion 14
         targetSdkVersion 27
         versionCode 1
@@ -20,5 +20,5 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:27.1.1'
-    compile project(':pedrovlc')
+    compile project(':limitvlc')
 }
