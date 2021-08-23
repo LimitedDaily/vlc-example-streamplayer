@@ -1,6 +1,6 @@
 # vlc-example-streamplayer
 
-[![Release](https://jitpack.io/v/pedroSG94/vlc-example-streamplayer.svg)](https://jitpack.io/#pedroSG94/vlc-example-streamplayer)
+[![Release](https://jitpack.io/v/LimitedDaily/vlc-example-streamplayer.svg)](https://jitpack.io/#LimitedDaily/vlc-example-streamplayer)
 
 Example code how to play a stream with VLC.
 
@@ -28,7 +28,7 @@ allprojects {
   }
 }
 dependencies {
-  compile 'com.github.pedroSG94.vlc-example-streamplayer:pedrovlc:2.5.14v3'
+  compile 'com.github.LimitedDaily.vlc-example-streamplayer:pedrovlc:2.5.14v3'
 }
 ```
 
@@ -41,6 +41,6 @@ allprojects {
   }
 }
 dependencies {
-  compile 'com.github.pedroSG94.vlc-example-streamplayer:libvlc:2.5.14v3'
+  compile 'com.github.LimitedDaily.vlc-example-streamplayer:libvlc:2.5.14v3'
 }
 ```
