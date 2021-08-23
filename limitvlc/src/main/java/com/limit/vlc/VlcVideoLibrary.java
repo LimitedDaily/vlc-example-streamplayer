@@ -116,6 +116,16 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     }
   }
 
+  public void play(String endPoint, int width, int height){
+    if (player == null || player.isReleased()) {
+      this.width = width;
+      this.height = height;
+      setMedia(new Media(vlcInstance, Uri.parse(endPoint)));
+    } else if (!player.isPlaying()) {
+      player.play();
+    }
+  }
+
   public void stop() {
     if (player != null && player.isPlaying()) {
       player.stop();
@@ -147,8 +157,8 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     //set correct class for render depend of constructor called
     if (surfaceView != null) {
       vlcOut.setVideoView(surfaceView);
-      width = surfaceView.getWidth();
-      height = surfaceView.getHeight();
+      //width = surfaceView.getWidth();
+      //height = surfaceView.getHeight();
     } else if (textureView != null) {
       vlcOut.setVideoView(textureView);
       width = textureView.getWidth();
