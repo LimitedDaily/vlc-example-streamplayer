@@ -5,10 +5,11 @@ android {
     buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "com.limit.vlctestapp"
-        minSdkVersion 14
+        minSdkVersion 17
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -19,7 +20,7 @@ android {
 }
 
 dependencies {
-    implementation project(path: ':libvlc')
+    implementation 'org.videolan.android:libvlc-all:3.2.6'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation project(':limitvlc')
 }
