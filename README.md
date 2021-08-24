@@ -31,16 +31,3 @@ dependencies {
   compile 'com.github.LimitedDaily.vlc-example-streamplayer:pedrovlc:2.5.14v3'
 }
 ```
-
-Compile only VLC (version 2.5.14):
-
-```gradle
-allprojects {
-  repositories {
-    maven { url 'https://jitpack.io' }
-  }
-}
-dependencies {
-  compile 'com.github.LimitedDaily.vlc-example-streamplayer:libvlc:2.5.14v3'
-}
-```
