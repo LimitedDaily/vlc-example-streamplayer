@@ -12,8 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.limit.vlc.VlcListener;
 import com.limit.vlc.VlcVideoLibrary;
-import java.util.Arrays;
+
 import org.videolan.libvlc.MediaPlayer;
+
+import java.util.Arrays;
 
 /**
  * Created by limit on 25/06/17.

@@ -20,7 +20,15 @@ android {
     }
 }
 
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
-    implementation project(':libvlc')
+    implementation(name: 'libvlc-null-3.4.0-eap9', ext: 'aar')
+    implementation(name: 'medialibrary-null-0.9.0-eap9', ext: 'aar')
+    //implementation project(':libvlc')
     //implementation 'org.videolan.android:libvlc-all:3.2.6'
 }

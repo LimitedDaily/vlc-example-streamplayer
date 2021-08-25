@@ -9,10 +9,11 @@ import android.view.SurfaceView;
 import android.view.TextureView;
 import java.util.ArrayList;
 import java.util.List;
-import org.videolan.libvlc.IVLCVout;
+
 import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.Media;
 import org.videolan.libvlc.MediaPlayer;
+import org.videolan.libvlc.interfaces.IVLCVout;
 
 /**
  * Created by limit on 25/06/17.
