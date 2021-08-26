@@ -27,6 +27,5 @@ repositories {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation project(':limitvlc')
-    implementation(name: 'libvlc-null-3.4.0-eap9', ext: 'aar')
-    implementation(name: 'medialibrary-null-0.9.0-eap9', ext: 'aar')
+    implementation(name: 'libvlc-all-3.3.0-eap08', ext: 'aar')
 }
