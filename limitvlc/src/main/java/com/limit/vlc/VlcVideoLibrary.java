@@ -71,7 +71,7 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     this.surface = surface;
     this.surfaceHolder = surfaceHolder;
     vlcInstance = new LibVLC(context, new VlcOptions().getDefaultOptions());
-    options.add(":fullscreen");
+    //options.add(":fullscreen");
   }
 
   public VlcVideoLibrary(Context context, VlcListener vlcListener, Surface surface, int width,
@@ -82,7 +82,7 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     this.height = height;
     surfaceHolder = null;
     vlcInstance = new LibVLC(context, new VlcOptions().getDefaultOptions());
-    options.add(":fullscreen");
+    //options.add(":fullscreen");
   }
 
   public VlcVideoLibrary(Context context, VlcListener vlcListener, Surface surface,
@@ -93,7 +93,7 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     this.width = width;
     this.height = height;
     vlcInstance = new LibVLC(context, new VlcOptions().getDefaultOptions());
-    options.add(":fullscreen");
+    //options.add(":fullscreen");
   }
 
   /**
