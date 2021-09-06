@@ -3,6 +3,7 @@ package com.limit.vlc;
 import android.content.Context;
 import android.graphics.SurfaceTexture;
 import android.net.Uri;
+import android.util.Log;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -158,8 +159,8 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     //set correct class for render depend of constructor called
     if (surfaceView != null) {
       vlcOut.setVideoView(surfaceView);
-      //width = surfaceView.getWidth();
-      //height = surfaceView.getHeight();
+      width = surfaceView.getWidth();
+      height = surfaceView.getHeight();
     } else if (textureView != null) {
       vlcOut.setVideoView(textureView);
       width = textureView.getWidth();
@@ -171,7 +172,13 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     } else {
       throw new RuntimeException("You cant set a null render object");
     }
-    if (width != 0 && height != 0) vlcOut.setWindowSize(width, height);
+    if (width != 0 && height != 0) {
+      Log.d("VlcLog", "View width : " + String.valueOf(width) + "height : " + String.valueOf(height));
+      vlcOut.setWindowSize(width, height);
+    } else {
+      Log.d("VlcLog", "View width : " + String.valueOf(width) + "height : " + String.valueOf(height));
+    }
+
     vlcOut.attachViews();
     player.setVideoTrackEnabled(true);
     player.play();
