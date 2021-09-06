@@ -40,6 +40,12 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     vlcInstance = new LibVLC(context, new VlcOptions().getDefaultOptions());
   }
 
+  public VlcVideoLibrary(Context context, VlcListener vlcListener, SurfaceView surfaceView, int width, int height) {
+    this.vlcListener = vlcListener;
+    this.surfaceView = surfaceView;
+    vlcInstance = new LibVLC(context, new VlcOptions().getDefaultOptions());
+  }
+
   public VlcVideoLibrary(Context context, VlcListener vlcListener, SurfaceView surfaceView, List<String> options) {
     this.vlcListener = vlcListener;
     this.surfaceView = surfaceView;
