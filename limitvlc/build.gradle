@@ -1,16 +1,14 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven-publish'
 group = 'com.github.LimitedDaily'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
 
     defaultConfig {
-        minSdkVersion 17
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 21
+        targetSdkVersion 30
     }
     buildTypes {
         release {
@@ -20,15 +18,9 @@ android {
     }
 }
 
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
-
 dependencies {
-    implementation(name: 'libvlc-all-3.3.0-eap08', ext: 'aar')
+    //implementation(name: 'libvlc-all-3.3.0-eap08', ext: 'aar')
     //implementation(name: 'medialibrary-null-0.9.0-eap9', ext: 'aar')
-    //implementation project(':libvlc')
+    implementation project(':libvlc')
     //implementation 'org.videolan.android:libvlc-all:3.2.6'
 }
