@@ -19,8 +19,5 @@ android {
 }
 
 dependencies {
-    //implementation(name: 'libvlc-all-3.3.0-eap08', ext: 'aar')
-    //implementation(name: 'medialibrary-null-0.9.0-eap9', ext: 'aar')
     implementation project(':libvlc')
-    //implementation 'org.videolan.android:libvlc-all:3.2.6'
 }
