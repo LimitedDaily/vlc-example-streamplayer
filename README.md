@@ -1,5 +1,4 @@
-[![Release](https://jitpack.io/v/LimitedDaily/vlc-example-streamplayer.svg)]
-(https://jitpack.io/#LimitedDaily/vlc-example-streamplayer)
+[![Release](https://jitpack.io/v/LimitedDaily/vlc-example-streamplayer.svg)](https://jitpack.io/#LimitedDaily/vlc-example-streamplayer)
 
 
 ## Setup
@@ -16,6 +15,6 @@ allprojects {
 And add next dependencies in the build.gradle of the module:
 ```gradle
 dependencies {
-    implementation 'com.github.LimitedDaily:vlc-example-streamplayer:0.0.4' 
+    implementation 'com.github.LimitedDaily:vlc-example-streamplayer:2.5.15' 
 }
 ```
