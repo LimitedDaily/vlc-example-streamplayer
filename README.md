@@ -13,8 +13,16 @@ allprojects {
 ```
 
 And add next dependencies in the build.gradle of the module:
+### libvlc
 ```gradle
 dependencies {
-    implementation 'com.github.LimitedDaily:vlc-example-streamplayer:2.5.15' 
+    implementation 'com.github.LimitedDaily.vlc-example-streamplayer:libvlc:1.0.0'
+}
+```
+
+### limitvlc Lib.
+```gradle
+dependencies {
+    implementation 'com.github.LimitedDaily.vlc-example-streamplayer:limitvlc:1.0.0'
 }
 ```
