@@ -1,5 +1,7 @@
 [![Release](https://jitpack.io/v/LimitedDaily/vlc-example-streamplayer.svg)](https://jitpack.io/#LimitedDaily/vlc-example-streamplayer)
 
+## Overview
+Updated VLC Version 3.4.0
 
 ## Setup
 Add the JitPack repository in your build.gradle (top level module):
