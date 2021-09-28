@@ -149,6 +149,21 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     }
   }
 
+  public void setSize(int width, int height) {
+    if(player != null) {
+      if(player.isPlaying())
+        player.pause();
+      IVLCVout vlcOut = player.getVLCVout();
+      vlcOut.detachViews();
+      this.width = width;
+      this.height = height;
+      vlcOut.setWindowSize(this.width, this.height);
+      vlcOut.attachViews();
+      player.setVideoTrackEnabled(true);
+      player.play();
+    }
+  }
+
   private void setMedia(Media media) {
     //delay = network buffer + file buffer
     //media.addOption(":network-caching=" + Constants.BUFFER);
