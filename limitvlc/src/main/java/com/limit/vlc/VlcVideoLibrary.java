@@ -149,6 +149,12 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     }
   }
 
+  public void updateSurface(){
+    if(player != null) {
+      player.updateVideoSurfaces();
+    }
+  }
+
   public void setSize(int width, int height, boolean flag) {
     if(flag) {
       if (player != null) {
