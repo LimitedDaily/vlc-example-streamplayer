@@ -149,18 +149,32 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     }
   }
 
-  public void setSize(int width, int height) {
-    if(player != null) {
-      if(player.isPlaying())
-        player.pause();
-      IVLCVout vlcOut = player.getVLCVout();
-      vlcOut.detachViews();
-      this.width = width;
-      this.height = height;
-      vlcOut.setWindowSize(this.width, this.height);
-      vlcOut.attachViews();
-      player.setVideoTrackEnabled(true);
-      player.play();
+  public void setSize(int width, int height, boolean flag) {
+    if(flag) {
+      if (player != null) {
+        if (player.isPlaying())
+          player.pause();
+        IVLCVout vlcOut = player.getVLCVout();
+        vlcOut.detachViews();
+        vlcOut.setVideoView(surfaceView);
+        this.width = width;
+        this.height = height;
+        vlcOut.setWindowSize(this.width, this.height);
+        vlcOut.attachViews();
+        player.setVideoTrackEnabled(true);
+        player.play();
+      }
+    } else {
+      if (player != null) {
+        if (player.isPlaying())
+          player.pause();
+        IVLCVout vlcOut = player.getVLCVout();
+        this.width = width;
+        this.height = height;
+        vlcOut.setWindowSize(this.width, this.height);
+        player.setVideoTrackEnabled(true);
+        player.play();
+      }
     }
   }
 
