@@ -184,6 +184,14 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
     }
   }
 
+  public IVLCVout getIVLCOut(){
+    if(player != null) {
+      return player.getVLCVout();
+    } else {
+      return null;
+    }
+  }
+
   private void setMedia(Media media) {
     //delay = network buffer + file buffer
     //media.addOption(":network-caching=" + Constants.BUFFER);
