@@ -137,9 +137,12 @@ public class VlcVideoLibrary implements MediaPlayer.EventListener {
   }
 
   public void stop() {
-    if (player != null && player.isPlaying()) {
-      player.stop();
+    if (player != null) {
+      if(player.isPlaying()){
+         player.stop();
+      }
       player.release();
+      player = null;
     }
   }
 
